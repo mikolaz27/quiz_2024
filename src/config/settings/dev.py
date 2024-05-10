@@ -6,7 +6,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []  # NOQA
 
-INSTALLED_APPS += []  # NOQA
+INSTALLED_APPS += ["django_extensions"]  # NOQA
 
 DATABASES = {
     "default": {
@@ -14,6 +14,5 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",  # NOQA
     }
 }
-
 
 STATIC_URL = "static/"
