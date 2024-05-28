@@ -23,3 +23,11 @@ while True:
 
 # docker build -t quiz_image .
 # docker run --rm -it --name quiz_cont -d quiz_image
+
+# docker run --rm -it --name quiz_cont -p 8010:8000 quiz_image
+
+# docker run --rm -it
+# --name quiz_cont -p 8010:8000
+# -v D:\Hillel\quiz_2024\quiz_2024\src:/quiz/src
+# quiz_image
+# ./commands/start_server_dev.sh
