@@ -2,11 +2,11 @@ import os
 
 from config.settings.base import *  # NOQA
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ["localhost"]
 
 DATABASES = {
     "default": {
@@ -15,8 +15,10 @@ DATABASES = {
     }
 }
 
-STATIC_ROOT = BASE_DIR / 'static/' # NOQA
+STATIC_ROOT = BASE_DIR / "static/"  # NOQA
+print(f"{STATIC_ROOT=}")
 STATIC_URL = "static/"
 
-MEDIA_ROOT = BASE_DIR / 'media/' # NOQA
+MEDIA_ROOT = BASE_DIR / "media/"  # NOQA
+print(f"{MEDIA_ROOT=}")
 MEDIA_URL = "media/"

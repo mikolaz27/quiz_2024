@@ -1,10 +1,9 @@
 from datetime import datetime
 
 from django.db import models
-
-from mongoengine import (Document, EmbeddedDocument, StringField, IntField, ListField,
-                         DateTimeField, EmbeddedDocumentField)
-
+from mongoengine import (DateTimeField, Document, EmbeddedDocument,
+                         EmbeddedDocumentField, IntField, ListField,
+                         StringField)
 
 # key1 =  { 1:1 }
 #
@@ -13,6 +12,7 @@ from mongoengine import (Document, EmbeddedDocument, StringField, IntField, List
 # key3 = "fdsafjsdklfjksl"
 #
 # key4 = 123214
+
 
 class Blog(EmbeddedDocument):
     name = StringField(max_length=255)
