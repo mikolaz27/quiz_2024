@@ -28,14 +28,14 @@ if os.environ.get("GITHUB_WORKFLOW"):
     }
 else:
     DATABASES = {
-        # "default": {
-        #     "ENGINE": "django.db.backends.postgresql",
-        #     "NAME": "quiz_db",
-        #     "USER": "quiz_user",
-        #     "PASSWORD": "admin",
-        #     "HOST": "localhost",
-        #     "PORT": "5432",
-        # },
+        # # "default": {
+        # #     "ENGINE": "django.db.backends.postgresql",
+        # #     "NAME": "quiz_db",
+        # #     "USER": "quiz_user",
+        # #     "PASSWORD": "admin",
+        # #     "HOST": "localhost",
+        # #     "PORT": "5432",
+        # # },
         "default": {
             "ENGINE": "django.db.backends.postgresql",
             "NAME": os.environ.get("POSTGRES_DB"),

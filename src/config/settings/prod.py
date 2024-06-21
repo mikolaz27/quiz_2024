@@ -6,7 +6,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost"]
+ALLOWED_HOSTS = ["ec2-54-196-153-15.compute-1.amazonaws.com", "localhost"]
 
 DATABASES = {
     "default": {
@@ -16,9 +16,7 @@ DATABASES = {
 }
 
 STATIC_ROOT = BASE_DIR / "static/"  # NOQA
-print(f"{STATIC_ROOT=}")
 STATIC_URL = "static/"
 
 MEDIA_ROOT = BASE_DIR / "media/"  # NOQA
-print(f"{MEDIA_ROOT=}")
 MEDIA_URL = "media/"
